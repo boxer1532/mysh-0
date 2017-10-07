@@ -25,7 +25,7 @@ void mysh_parse_command(const char* command,
  token = strtok(str, " ");
  
  while(token != NULL){
-  (*argv)[idx] = (char*)calloc(500,sizeof(char));
+  (*argv)[idx] = (char*)calloc(8100, sizeof(char));
   strcpy((*argv)[idx++], token);
   token = strtok(NULL, " "); 
  }
