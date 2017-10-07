@@ -17,7 +17,7 @@ void mysh_parse_command(const char* command,
      if(32 <= str[i] && str[i] <= 126)
 	 continue;
      else
-        str[i]=' ';
+        str[i]= ' ';
  }
 
  (*argv) = (char**)calloc(100, sizeof(char*));
