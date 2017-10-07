@@ -29,7 +29,7 @@ int do_pwd(int argc, char** argv) {
   if(getcwd(buf, 9000) == NULL)
      return -1;
   else
-     printf("%s",buf);
+     printf("%s", buf);
 
   return 0;
 }
@@ -46,9 +46,9 @@ int validate_cd_argv(int argc, char** argv) {
 
 int validate_pwd_argv(int argc, char** argv) {
   
- if(argc != 1 || (argc == 1 && strcmp(argv[0],"pwd")))
+ if(argc != 1 || (argc == 1 && strcmp(argv[0], "pwd")))
   return 0;
- else if(argc == 1 && !strcmp(argv[0],"pwd"))
+ else if(argc == 1 && !strcmp(argv[0], "pwd"))
   return 1;
  else
   return 0;
