@@ -29,7 +29,7 @@ int do_pwd(int argc, char** argv) {
   if(getcwd(buf, 9000) == NULL)
      return -1;
   else
-     printf("%s", buf);
+     printf("%s\n", buf);
 
   return 0;
 }
