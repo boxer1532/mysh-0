@@ -1,2 +1,2 @@
 # mysh-0
-parsing commands && cd,pwd implementation
+parsing commands(utils.c) & cd,pwd implementation(commands.c)
